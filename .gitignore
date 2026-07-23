@@ -1,0 +1,27 @@
+# Virtual Environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# IDE
+.idea/
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Models
+models/*.joblib
+models/*.pkl
+
+# Output files
+outputs/
+
+# Dataset (optional if large)
+dataset/
