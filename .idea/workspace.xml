@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21706278-f1e7-49f4-8d79-7cf3111e83aa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/SignLanguageRecognition.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_install.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/camera.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hand_detection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +26,9 @@
   &quot;fromUser&quot;: false
 }</component>
   <component name="ProjectId" id="3GutdxQRngTH9Fao2Q6Dj1pWqQj" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -95,7 +94,7 @@
       <option name="presentableId" value="Default" />
       <updated>1784833372847</updated>
       <workItem from="1784833373865" duration="1162000" />
-      <workItem from="1784834551892" duration="931000" />
+      <workItem from="1784834551892" duration="1565000" />
     </task>
     <servers />
   </component>
