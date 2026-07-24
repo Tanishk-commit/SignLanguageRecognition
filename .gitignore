@@ -1,27 +1,26 @@
 # Virtual Environment
 .venv/
 
+# PyCharm
+.idea/
+
 # Python cache
 __pycache__/
-*.pyc
-
-# IDE
-.idea/
-.vscode/
+*.py[cod]
 
 # Jupyter
 .ipynb_checkpoints/
 
-# OS
+# OS files
 .DS_Store
 Thumbs.db
 
-# Models
-models/*.joblib
-models/*.pkl
-
-# Output files
+# Output folders
 outputs/
 
-# Dataset (optional if large)
+# Trained models
+models/*.pkl
+models/*.joblib
+
+# Large datasets (optional)
 dataset/
