@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21706278-f1e7-49f4-8d79-7cf3111e83aa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataset_creator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/train_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,6 +101,7 @@
       <workItem from="1784833373865" duration="1162000" />
       <workItem from="1784834551892" duration="2669000" />
       <workItem from="1784864331250" duration="978000" />
+      <workItem from="1784897598081" duration="2350000" />
     </task>
     <servers />
   </component>
