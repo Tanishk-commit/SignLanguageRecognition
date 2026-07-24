@@ -1,4 +1,5 @@
 import tensorflow as tf
+import matplotlib.pyplot as plt
 
 IMAGE_SIZE = (224, 224)
 BATCH_SIZE = 32
@@ -70,3 +71,59 @@ model.compile(
 )
 
 model.summary()
+
+history = model.fit(
+    train_dataset,
+    validation_data=validation_dataset,
+    epochs=3
+)
+
+model.save("models/sign_language_model.keras")
+
+early_stopping = tf.keras.callbacks.EarlyStopping(
+    monitor="val_loss",
+    patience=3,
+    restore_best_weights=True
+)
+
+checkpoint = tf.keras.callbacks.ModelCheckpoint(
+    "models/sign_language_model.keras",
+    monitor="val_accuracy",
+    save_best_only=True
+)
+# Plot Accuracy
+
+plt.figure(figsize=(10, 5))
+
+plt.plot(history.history["accuracy"], label="Training Accuracy")
+plt.plot(history.history["val_accuracy"], label="Validation Accuracy")
+
+plt.title("Training vs Validation Accuracy")
+plt.xlabel("Epoch")
+plt.ylabel("Accuracy")
+plt.legend()
+
+plt.show()
+
+
+# Plot Loss
+
+plt.figure(figsize=(10, 5))
+
+plt.plot(history.history["loss"], label="Training Loss")
+plt.plot(history.history["val_loss"], label="Validation Loss")
+
+plt.title("Training vs Validation Loss")
+plt.xlabel("Epoch")
+plt.ylabel("Loss")
+plt.legend()
+
+plt.show()
+
+print("\nFinal Training Accuracy:",
+      history.history["accuracy"][-1])
+
+print("Final Validation Accuracy:",
+      history.history["val_accuracy"][-1])
+
+print("\n✅ Model saved successfully!")
